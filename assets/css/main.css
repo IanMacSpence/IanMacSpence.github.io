@@ -4004,6 +4004,22 @@ body.is-preload #sidebar nav ul li {
   width: 100%;
 }
 
+.top-skills-container,
+.bottom-skills-container {
+  display: flex;
+  justify-content: center;
+  max-width: 750px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.skill-item:nth-child(odd) {
+  margin-top: -75px;
+}
+.skill-item:nth-child(even) {
+  margin-top: 75px;
+}
+
 .skill-item {
   margin: 5px 1% 75px;
   text-align: center;
@@ -4018,22 +4034,6 @@ body.is-preload #sidebar nav ul li {
 .skill-item img {
   width: 100%;
   max-width: 100px;
-}
-
-/* Zigzag pattern for the first row */
-.skill-item:nth-child(odd):nth-child(-n + 5) {
-  margin-top: -100px;
-}
-.skill-item:nth-child(even):nth-child(-n + 5) {
-  margin-top: 100px;
-}
-
-/* Zigzag pattern for the second row */
-.skill-item:nth-child(odd):nth-child(n + 6) {
-  margin-top: 100px;
-}
-.skill-item:nth-child(even):nth-child(n + 6) {
-  margin-top: -100px;
 }
 
 /* Projects */
